@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block head %}
+  <title>Image Gallery</title>
+  <style>
+    .gallery-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 10px;
+      padding: 20px;
+    }
+
+    .gallery-container img {
+      object-fit:contain;
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+{% endblock %}
+
+{% block body %}
+  <div class="gallery-container">
+    {%for image in container%}
+        <img src={{image.Url}} alt="Fetched Image"/>
+      {%endfor%}
+  </div>
+{% endblock %}

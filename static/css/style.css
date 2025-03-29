@@ -1,0 +1,22 @@
+body{
+    background-color: aquamarine;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    padding: 1.5rem;
+}
+.form input{
+    height: 40px;
+    width: 80px;
+    border-radius: 10px;
+}
+#content{
+    height: 35px;
+    width: 200px;
+    border-radius: 10px;
+}

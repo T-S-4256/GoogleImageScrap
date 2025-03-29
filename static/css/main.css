@@ -1,0 +1,70 @@
+#content {
+    height: 35px;
+    width: 250px;  /* Slightly increased */
+    border-radius: 10px;
+    padding-left: 10px;  /* Adds inner space for better text readability */
+}
+/* Styling the table container */
+.table_wrapper {
+    width: 100%;
+    /* Full width table */
+    height: 100%;
+    /* Full height */
+    border-collapse: collapse;
+    /* Remove gaps between table borders */
+}
+
+/* Styling the table head */
+.table_wrapper th {
+    background-color: #4CAF50;
+    /* Green background for header */
+    color: white;
+    /* White text */
+    font-size: 1.5rem;
+    /* Larger font size for header */
+    font-weight: bold;
+    /* Bold text */
+    padding: 12px;
+    /* Padding for header cells */
+    text-align: left;
+    /* Left-align text in header */
+    border: 2px solid #333;
+    /* Dark border for header cells */
+}
+
+/* Styling the data cells */
+.table_wrapper td {
+    background-color: #f2f2f2;
+    /* Light gray background for data cells */
+    color: #333;
+    /* Dark text color */
+    font-size: 1.2rem;
+    /* Standard font size for data */
+    font-weight: normal;
+    /* Normal font weight */
+    padding: 10px;
+    /* Padding for data cells */
+    border: 1px solid #999;
+    /* Light border for data cells */
+    text-align: left;
+    /* Left-align text in data cells */
+}
+
+/* Alternating row colors */
+.table_wrapper tr:nth-child(odd) td {
+    background-color: #e8e8e8;
+    /* Slightly darker gray for odd rows */
+}
+
+/* Styling the Comment column to take the largest width */
+.table_wrapper th:nth-child(3),
+.table_wrapper td:nth-child(3) {
+    width: 100%;
+    /* Comment column expands to take available space */
+}
+
+/* Add word wrapping to avoid text overflow */
+.table_wrapper td {
+    word-wrap: break-word;
+    /* Break long words if needed */
+}
